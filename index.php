@@ -38,7 +38,7 @@
 					<option value="SUPPLEMENTS">SUPPLEMENTS</option>
 			</p></select>
 			<p>
-				<input type="text" name="upc" id="upc" placeholder="UPC" maxlength="13">
+				<input type="text" name="upc" id="upc" placeholder="UPC (leave blank for PLU)" maxlength="13">
 				<input type="text" name="description" placeholder="Description" maxlength="32">
 			</p>
 			<p>

@@ -11,7 +11,7 @@ if($mysqli === false) {
 $department = $mysqli->real_escape_string($_REQUEST['department']);
 $upc = $mysqli->real_escape_string($_REQUEST['upc']);
 $description = $mysqli->real_escape_string($_REQUEST['description']);
-$brand = $mysqli->real_escape_string($_REQUEST['brand']);
+$brand = $mysqli->strtoupper(real_escape_string($_REQUEST['brand']));
 $size = $mysqli->real_escape_string($_REQUEST['size']);
 $cost = $mysqli->real_escape_string($_REQUEST['cost']);
 $retail = $mysqli->real_escape_string($_REQUEST['retail']);
@@ -24,7 +24,8 @@ $notes = $mysqli->real_escape_string($_REQUEST['notes']);
 
 
 
-$sql = "INSERT INTO new_item (Department, Item_ID, Item_Description, Brand, Size, Cost, Retail, Supplier, Supplier_ID, P6, Local, Organic, Notes) VALUES ('$department', '$upc', '$description', '$brand', '$size', '$cost', '$retail', '$supplier', '$supplier_ID', '$p6', '$local', '$organic', '$notes')";
+$sql = "INSERT INTO new_item (Department, Item_ID, Item_Description, Brand, Size, Cost, Retail, Supplier, Supplier_ID, P6, Local, Organic, Notes) 
+		VALUES ('$department', '$upc', '$description', '$brand', '$size', '$cost', '$retail', '$supplier', '$supplier_ID', '$p6', '$local', '$organic', '$notes')";
 
 if($mysqli->query($sql) === false) 
 {
