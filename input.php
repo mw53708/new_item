@@ -11,7 +11,7 @@ if($mysqli === false) {
 $department = $mysqli->real_escape_string($_REQUEST['department']);
 $upc = $mysqli->real_escape_string($_REQUEST['upc']);
 $description = $mysqli->real_escape_string($_REQUEST['description']);
-$brand = $mysqli->strtoupper(real_escape_string($_REQUEST['brand']));
+$brand = $mysqli->real_escape_string($_REQUEST['brand']);
 $size = $mysqli->real_escape_string($_REQUEST['size']);
 $cost = $mysqli->real_escape_string($_REQUEST['cost']);
 $retail = $mysqli->real_escape_string($_REQUEST['retail']);
