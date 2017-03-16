@@ -1,0 +1,12 @@
+#formDiv {
+	width: 50%;
+	height: 100%
+	float: left;
+	text-align: center;
+}
+
+#result {
+	width: 50%;
+	float: left;
+}
+
