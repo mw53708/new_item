@@ -39,22 +39,22 @@
 			</p></select>
 			<p>
 				<input type="text" name="upc" id="upc" placeholder="UPC (leave blank for PLU)" maxlength="13">
-				<input type="text" name="description" placeholder="Description" maxlength="32">
+				<input type="text" name="description" placeholder="Description" maxlength="32" required>
 			</p>
 			<p>
-				<input type="text" name="brand" placeholder="Brand" maxlength="32">
-				<input type="text" name="size" placeholder="Size" maxlength="8">
+				<input type="text" name="brand" placeholder="Brand" maxlength="32" required>
+				<input type="text" name="size" placeholder="Size" maxlength="8" required>
 			</p>
 			<p>
-				<input type="text" name="cost" placeholder="Unit Cost" maxlength="13">
-				<input type="text" name="retail" placeholder="Retail" maxlength="13">
+				<input type="text" name="cost" placeholder="Unit Cost" maxlength="13" required>
+				<input type="text" name="retail" placeholder="Retail" maxlength="13" required>
 			</p>
 			<p>
-				<input type="text" name="supplier" placeholder="Supplier" maxlength="32">
-				<input type="text" name="supplier_ID" placeholder="Supplier ID" maxlength="13">
+				<input type="text" name="supplier" placeholder="Supplier" maxlength="32" required>
+				<input type="text" name="supplier_ID" placeholder="Supplier ID" maxlength="13" >
 			</p>
 			<p>
-				<textarea cols="50" rows="4" name="notes" placeholder="Enter any notes here. (Sold per lb, Alt ID for singles, etc.)" maxlength="200"></textarea>
+				<textarea cols="41" rows="4" name="notes" placeholder="Enter any notes here. (Sold per lb, Alt ID for singles, etc.)" maxlength="200"></textarea>
 			</p>
 
 			
@@ -65,7 +65,8 @@
 		    <input type="radio" name="local" id="localRadio" value="Bio-Regional">Bio-Regional<br/></p>
 
 		    <p><strong>Organic?</strong><br/></strong>
-		    <input type="radio" name="organic" value="Organic" required>Organic<br/>
+		    <input type="radio" name="organic" value="Neither" required>Neither<br/>
+		    <input type="radio" name="organic" value="Organic">Organic<br/>
 		    <input type="radio" name="organic" value="Fairtrade">Fairtrade<br/>
 		    <input type="radio" name="organic" value="Organic & Fairtrade">Organic & Fairtrade</p>
 
